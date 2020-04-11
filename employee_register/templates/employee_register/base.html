@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Register</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/all.min.css' %}">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="col-md-10 offset-1 mt-1">
+            <div class="jumbotron">
+                <h1 class="display-4">Employee Register</h1>
+                <hr class="my-4">
+                {% block content %}
+                {% endblock content %}
+              </div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/jquery-3.4.1.slim.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'fonts/all.min.js' %}"></script>
+
+</body>
+</html>
